@@ -1,6 +1,21 @@
-<% if @name %>
- <h1>"my name is <%= @name %>"</h1>
-<% end %>
+<h1> Name the cat below </h1>
+<form action='/named-cat'>
+  <input type="text" name="name">
+  <input type="submit" value="Submit">
+</form>
+
+<% if @name == "Nick" %>
+<h1> GO AWAY NICK </h1>
+<div style='border: 3px dashed black'>
+  <img src='https://media.giphy.com/media/bcqAMUTUHoLDy/giphy.gif'
+</div>
+<% elsif @name %>
+ <h1> My name is <%= @name %></h1>
   <div style='border: 3px dashed red'>
     <img src='http://bit.ly/1eze8aE'
   </div>
+  <% else %>
+  <div style='border: 3px dashed red'>
+    <img src='http://bit.ly/1eze8aE'
+  </div>
+  <% end %>
