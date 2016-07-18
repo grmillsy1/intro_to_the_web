@@ -6,16 +6,16 @@
 
 <% if (@name == "Nick") || (@name == "Jack")%>
 <h1> GO AWAY <%= @name.upcase %> </h1>
-<div style='border: 3px dashed black'>
-  <img src='https://media.giphy.com/media/bcqAMUTUHoLDy/giphy.gif'
-</div>
+  <div>
+    <img style='border: 3px dashed black', src='https://media.giphy.com/media/bcqAMUTUHoLDy/giphy.gif'
+  </div>
 <% elsif @name %>
  <h1> My name is <%= @name %></h1>
-  <div style='border: 3px dashed red'>
-    <img src='http://bit.ly/1eze8aE'
+  <div>
+    <img style='border: 3px dashed red', src='http://bit.ly/1eze8aE'
   </div>
   <% else %>
-  <div style='border: 3px dashed red'>
-    <img src='http://bit.ly/1eze8aE'
+  <div>
+    <img style='border: 3px dashed red', src='http://bit.ly/1eze8aE'
   </div>
   <% end %>
