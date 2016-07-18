@@ -4,8 +4,8 @@
   <input type="submit" value="Submit">
 </form>
 
-<% if @name == "Nick" %>
-<h1> GO AWAY NICK </h1>
+<% if (@name == "Nick") || (@name == "Jack")%>
+<h1> GO AWAY <%= @name.upcase %> </h1>
 <div style='border: 3px dashed black'>
   <img src='https://media.giphy.com/media/bcqAMUTUHoLDy/giphy.gif'
 </div>
