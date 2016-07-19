@@ -1,5 +1,11 @@
+<form action="/named-cat">
+  <input type="text" name="name">
+  <input type="submit" values="Submit">
+</form>
 
+<% if @name %>
 <h1>My name is <%= @name %></h1>
+<% end %>
 <div style='width:454px; border: 10px dotted pink;'>
-<img src='http://bit.ly/1eze8aE'>
+  <img src='http://bit.ly/1eze8aE'>
 </div>
